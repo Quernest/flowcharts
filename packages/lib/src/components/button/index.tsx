@@ -1,16 +1,16 @@
-import React from "react";
-import styles from "./button.module.css";
+import React from 'react'
+import styles from './button.module.css'
 
 interface ButtonProps {
-  variant?: "contained" | "outlined";
-  color?: "primary" | "secondary";
-  onClick?: () => void;
-  children: React.ReactNode;
+  variant?: 'contained' | 'outlined'
+  color?: 'primary' | 'secondary'
+  onClick?: () => void
+  children: React.ReactNode
 }
 
 const Button: React.FC<ButtonProps> = ({
-  variant = "contained",
-  color = "primary",
+  variant = 'contained',
+  color = 'primary',
   onClick,
   children,
   ...otherProps
@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

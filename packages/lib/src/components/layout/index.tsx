@@ -1,8 +1,8 @@
-import styles from "./layout.module.css";
+import styles from './layout.module.css'
 
 export interface LayoutProps {
-  left: React.ReactNode;
-  right: React.ReactNode;
+  left: React.ReactNode
+  right: React.ReactNode
 }
 
 export default function Layout({ left, right }: LayoutProps) {
@@ -11,5 +11,5 @@ export default function Layout({ left, right }: LayoutProps) {
       <aside className={styles.sidebar}>{left}</aside>
       <main className={styles.content}>{right}</main>
     </div>
-  );
+  )
 }

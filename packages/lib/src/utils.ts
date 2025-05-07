@@ -1,68 +1,68 @@
-import { Node } from "@xyflow/react";
+import { Node } from '@xyflow/react'
 
-export const noop = () => {};
+export const noop = () => {}
 
 export const initialNodes: Node[] = [
   {
-    id: "a",
-    type: "custom",
+    id: 'a',
+    type: 'custom',
     position: { x: 120, y: 100 },
-    data: { label: "Node A" },
+    data: { label: 'Node A' },
   },
   {
-    id: "b",
-    type: "custom",
+    id: 'b',
+    type: 'custom',
     position: { x: 400, y: 100 },
-    data: { label: "Node B" },
+    data: { label: 'Node B' },
   },
   {
-    id: "c",
-    type: "custom",
+    id: 'c',
+    type: 'custom',
     position: { x: 680, y: 100 },
-    data: { label: "Node C" },
+    data: { label: 'Node C' },
   },
   {
-    id: "d",
-    type: "custom",
+    id: 'd',
+    type: 'custom',
     position: { x: 120, y: 300 },
-    data: { label: "Node D" },
+    data: { label: 'Node D' },
   },
   {
-    id: "e",
-    type: "custom",
+    id: 'e',
+    type: 'custom',
     position: { x: 400, y: 300 },
-    data: { label: "Node E" },
+    data: { label: 'Node E' },
   },
   {
-    id: "f",
-    type: "custom",
+    id: 'f',
+    type: 'custom',
     position: { x: 680, y: 300 },
-    data: { label: "Node F" },
+    data: { label: 'Node F' },
   },
   {
-    id: "g",
-    type: "custom",
+    id: 'g',
+    type: 'custom',
     position: { x: 260, y: 480 },
-    data: { label: "Node G" },
+    data: { label: 'Node G' },
   },
   {
-    id: "h",
-    type: "custom",
+    id: 'h',
+    type: 'custom',
     position: { x: 540, y: 480 },
-    data: { label: "Node H" },
+    data: { label: 'Node H' },
   },
-];
+]
 
 export const COLORS = [
-  "#FFFFFF",
-  "#B3B3B3",
-  "#D9D9D9",
-  "#FFD7D4",
-  "#FFE5CC",
-  "#FFEFC7",
-  "#D7F4DB",
-  "#D2FAF7",
-  "#D4EDFF",
-  "#E7DBFF",
-  "#FFD4F2",
-];
+  '#FFFFFF',
+  '#B3B3B3',
+  '#D9D9D9',
+  '#FFD7D4',
+  '#FFE5CC',
+  '#FFEFC7',
+  '#D7F4DB',
+  '#D2FAF7',
+  '#D4EDFF',
+  '#E7DBFF',
+  '#FFD4F2',
+]

@@ -1,11 +1,6 @@
-import { ConnectionLineComponentProps } from "@xyflow/react";
+import { ConnectionLineComponentProps } from '@xyflow/react'
 
-function ConnectionLine({
-  fromX,
-  fromY,
-  toX,
-  toY,
-}: ConnectionLineComponentProps) {
+function ConnectionLine({ fromX, fromY, toX, toY }: ConnectionLineComponentProps) {
   return (
     <>
       <path
@@ -15,16 +10,9 @@ function ConnectionLine({
         className="animated"
         d={`M${fromX},${fromY} C ${fromX} ${toY} ${fromX} ${toY} ${toX},${toY}`}
       />
-      <circle
-        cx={toX}
-        cy={toY}
-        fill="#fff"
-        r={3}
-        stroke="#4FACFF"
-        strokeWidth={1}
-      />
+      <circle cx={toX} cy={toY} fill="#fff" r={3} stroke="#4FACFF" strokeWidth={1} />
     </>
-  );
+  )
 }
 
-export default ConnectionLine;
+export default ConnectionLine

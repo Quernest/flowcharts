@@ -1,32 +1,20 @@
-import React, { useCallback } from 'react';
-import {
-  ReactFlow,
-  addEdge,
-  Background,
-  MarkerType,
-  Connection,
-} from '@xyflow/react';
-import CustomNode from '../custom-node';
-import ConnectionLine from '../custom-connection-line';
-import { useDiagramContext } from '../../contexts/diagram-context';
+import React, { useCallback } from 'react'
+import { ReactFlow, addEdge, Background, MarkerType, Connection } from '@xyflow/react'
+import CustomNode from '../custom-node'
+import ConnectionLine from '../custom-connection-line'
+import { useDiagramContext } from '../../contexts/diagram-context'
 
-const nodeTypes = { custom: CustomNode };
+const nodeTypes = { custom: CustomNode }
 
 const DiagramCanvas: React.FC = () => {
-  const {
-    nodes,
-    onNodesChange,
-    edges,
-    setEdges,
-    onEdgesChange,
-  } = useDiagramContext();
+  const { nodes, onNodesChange, edges, setEdges, onEdgesChange } = useDiagramContext()
 
   const onConnect = useCallback(
     (params: Connection) => {
-      const { source, target } = params;
+      const { source, target } = params
 
       if (source !== target) {
-        setEdges(eds =>
+        setEdges((eds) =>
           addEdge(
             {
               ...params,
@@ -38,13 +26,13 @@ const DiagramCanvas: React.FC = () => {
               },
               style: { strokeWidth: 1, stroke: '#000' },
             },
-            eds
-          )
-        );
+            eds,
+          ),
+        )
       }
     },
-    [setEdges]
-  );
+    [setEdges],
+  )
 
   return (
     <ReactFlow
@@ -59,7 +47,7 @@ const DiagramCanvas: React.FC = () => {
     >
       <Background bgColor="#FBFBFB" />
     </ReactFlow>
-  );
-};
+  )
+}
 
-export default DiagramCanvas;
+export default DiagramCanvas

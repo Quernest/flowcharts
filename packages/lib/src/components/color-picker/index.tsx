@@ -1,9 +1,9 @@
-import React from "react";
-import { defaultColor, useColorContext } from "../../contexts/color-context";
-import styles from "./color-picker.module.css";
+import React from 'react'
+import { defaultColor, useColorContext } from '../../contexts/color-context'
+import styles from './color-picker.module.css'
 
 const ColorPicker: React.FC = () => {
-  const { globalColor, globalColors, setGlobalColor } = useColorContext();
+  const { globalColor, globalColors, setGlobalColor } = useColorContext()
 
   return (
     <div className={styles.colorPickerGrid}>
@@ -16,13 +16,13 @@ const ColorPicker: React.FC = () => {
             globalColor === color && styles.selected,
           ]
             .filter(Boolean)
-            .join(" ")}
+            .join(' ')}
           style={{ backgroundColor: color }}
           onClick={() => setGlobalColor(color)}
         />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default ColorPicker;
+export default ColorPicker
