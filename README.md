@@ -32,3 +32,7 @@ The project follows a monorepo structure with two main packages:
 - **`packages/lib`**: A library of optimized React-based components, including `FlowChart`, `Canvas`, `Toolbar`, and context providers, which are reusable and can be easily imported into other projects.
 
 This modular architecture ensures the core components are optimized and separated for ease of maintenance and scalability.
+
+## ⚠️ Note
+
+This repository was created specifically for a test task and may not reflect the final project architecture or include all necessary features for production. It is intended for demonstration and evaluation purposes only.
