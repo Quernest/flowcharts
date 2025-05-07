@@ -4,6 +4,10 @@ A simple React-based flowchart tool for creating and interacting with diagrams. 
 
 ### 🔗 [Live Demo](https://flowcharts.onrender.com/)
 
+
+https://github.com/user-attachments/assets/b8dea6cc-3166-40cb-abb5-cbe2dd11b3a1
+
+
 ---
 
 ## 🧩 Key Components
