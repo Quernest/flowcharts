@@ -1,0 +1,49 @@
+.button {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0.8em;
+  text-transform: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+}
+
+.contained {
+  background-color: #036BC8;
+  color: #fff;
+}
+
+.contained.primary {
+  background-color: #036BC8;
+}
+
+.contained.secondary {
+  background-color: #f50057;
+}
+
+.outlined {
+  background-color: transparent;
+  color: #036BC8;
+  border: 2px solid #036BC8;
+}
+
+.outlined.primary {
+  border-color: #036BC8;
+  color: #036BC8;
+}
+
+.outlined.secondary {
+  border-color: #f50057;
+  color: #f50057;
+}
+
+.outlined:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.button:hover {
+  opacity: 0.9;
+}

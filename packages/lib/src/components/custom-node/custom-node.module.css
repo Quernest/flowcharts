@@ -1,0 +1,54 @@
+.nodeContainer {
+  width: 80px;
+  height: 40px;
+  border-radius: 6px;
+  position: relative;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid var(--border-color, #e6e6e6);
+  background-color: var(--background-color, #fff);
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.handle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a6d3fd;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nodeContainer.hovered .handle {
+  opacity: 1;
+}
+
+.handleTop {
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.handleBottom {
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.handleLeft {
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.handleRight {
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}

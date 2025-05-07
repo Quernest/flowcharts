@@ -1,0 +1,4 @@
+.react-flow__node.selectable.selected {
+  outline: 1px solid #237FD7;
+  border-radius: 6px;
+}
